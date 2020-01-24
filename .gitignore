@@ -1,0 +1,6 @@
+config.py
+main.json
+testing.py
+geckodriver.log
+__pycache__
+data.txt
