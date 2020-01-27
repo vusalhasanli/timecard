@@ -1,6 +1,6 @@
 from selenium import webdriver
-# import config
-import json
+import config
+import os
 
 
 class Webdriver:
@@ -9,13 +9,15 @@ class Webdriver:
         """
         logs into westvalley using user's id and password.
         """
-        with open ('./main.json') as main_file:
-            data = main_file.read()
-            obj = json.loads(data)
+        # with open ('./main.json') as main_file:
+        #     data = main_file.read()
+        #     obj = json.loads(data)
         # print(str(obj['user_id']))
+        user_id = os.environ.get('USER_ID')
+        password = os.environ.get('PASSWORD')
         self.driver.get("https://westvalley.fastime.com")
-        self.driver.find_element_by_id("txtOrderNumber").send_keys(str(obj['user_id']))
-        self.driver.find_element_by_name("txtSSN").send_keys(str(obj['password']))
+        self.driver.find_element_by_id("txtOrderNumber").send_keys(user_id)
+        self.driver.find_element_by_name("txtSSN").send_keys(password)
         self.driver.find_element_by_id("btnSubmit").click()
         self.driver.find_element_by_id("btnAccept").click()
     def save_for_later(self):
