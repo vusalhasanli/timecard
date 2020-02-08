@@ -4,4 +4,4 @@ testing.py
 geckodriver.log
 __pycache__
 data.txt
-holidays.json
+# holidays.json
