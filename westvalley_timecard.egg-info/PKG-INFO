@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: westvalley-timecard
+Version: 0.0.1
+Summary: This is a tool to fill out weekly timecard for westvalley staffing group employees
+Home-page: https://github.com/vusalhasanli/timecard
+Author: author
+Author-email: mail@vhasanov.com
+License: UNKNOWN
+Description: #This is a tool to fill out weekly timecard for westvalley employees
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GPLv3+
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
