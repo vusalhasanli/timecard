@@ -1,1 +1,1 @@
-#This is a tool to fill out weekly timecard for westvalley employees
+# This is a tool to fill out weekly timecard for "https://westvalley.fastime.com"
